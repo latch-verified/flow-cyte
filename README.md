@@ -53,9 +53,10 @@ This collection of tools available on the Latch platform allows scientists to an
 Latch has made available three resources for FCS file analysis:
 * [Verified datasets](https://github.com/latchbio/wf-cytoflow/tree/documentation/verified-data): For easy testing of tools
 * [Workflow](https://github.com/latchbio/wf-cytoflow/tree/documentation/verified-workflow/wf): Bulk-import workflow for analyzing hundreds of FCS files at a time using Cytoflow [^1]
-* [Pod](https://github.com/latchbio/wf-cytoflow/tree/documentation/verified-pod): Hosted GUI of Cytoflow [^1] for point-and-click gating
+* [BCyto Pod](https://github.com/latchbio/wf-cytoflow/tree/documentation/verified-pod): Hosted GUI of BCyto [^2] for point-and-click gating
 
-## Cytoflow
+## Cytoflow 
+### Workflow
 
 Cytoflow is an open-source tool for FCS file analysis built on Python that is leveraged in both the Pod and Workflow on Latch. Cytoflow goes beyond simple cell counting and has a unique emphasis on metadata -- a user can specify the conditions for each sample up front, then use those conditions to facet the analysis. Cytoflow also allows users to generate a Jupyter notebook from any steps taken in its GUI, so plots can be replicated easily after your session ends!
 
@@ -71,5 +72,27 @@ Cytoflow has the following capabilities:
 * Produce publication-ready plots 
 * Reshare results as a Cytoflow workflow or as a Jupyter notebook with colleagues
 
+## BCyto 
+### Pod
+
+BCyto is an open-source project that provides an user-friendly, high-performance interface for Flow Cytometry analysis in R. 
+
+<html>
+<p align="center">
+<img width="80%" alt="Screenshot 2024-03-14 at 10 40 14 PM" src="https://github.com/latch-verified/flow-cyte/assets/52743495/eac7155c-8555-4bb3-ae6c-23a0e3e5ecf2">
+</p>
+</html>
+
+BCyto allows cell biologists with no coding skills to reliably analyse flow cytometry data [^3]. This tool provides:
+* Intuitive axis transformation for better data visualization
+* Easy visualization of compensation plots and modification of compensation matrices
+* Fast generation of backgating and overlay plots
+* Built-in proliferation and dimensionality reduction tools.
+
 
 [^1]: https://github.com/cytoflow/cytoflow 
+[^2]: https://github.com/BonilhaCaio/BCyto
+[^3]: https://www.sciencedirect.com/science/article/abs/pii/S0890850822000597?via%3Dihub
+
+
+
